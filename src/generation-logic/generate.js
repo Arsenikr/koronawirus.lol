@@ -56,12 +56,12 @@ function getRandom(n, data) {
 function getQuarantineDecision() {
     let rnd = Math.random();
     if (rnd <= 0.25) {
-        return "zwolnione z kwarantanny";
+        return "פטור מבידוד";
     }
     else {
         rnd = Math.random();
         const quarantine_days = QUARANTINE_MIN + Math.floor(rnd * (QUARANTINE_MAX - QUARANTINE_MIN));
-        return "zobowiązane do odbycia kwarantanny przez " + quarantine_days + " dni";
+        return "ייכנסו לבידוד במלונית למשך " + quarantine_days + " ימים";
     }
 }
 
@@ -70,10 +70,10 @@ function getBusSeatsNumber(percentage) {
 }
 
 function getRestaurantState(value1, value2) {
-    if (value1.includes("zamknięte")) {
+    if (value1.includes("סגור")) {
         return "";
     }
-    return `, pod warunkiem ${value2}`;
+    return `, בתנאי ${value2}`;
 }
 
 function getSchoolGradeRange() {

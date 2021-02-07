@@ -173,7 +173,7 @@ function App(props) {
     year: 'numeric'
   };
 
-  const date = (new Date()).toLocaleDateString('pl-PL', dateOpts)
+  const date = (new Date()).toLocaleDateString('he-IL', dateOpts)
 
   shuffleArray(optionalSentences)
   const finalSentences = [

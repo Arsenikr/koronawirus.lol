@@ -60,12 +60,12 @@ export function collectEvent(uuid) {
 }
 
 export function chooseLanguage() {
-    const supportedLanguages = ["pl", "en"]
-    const locale = getUserLocale().substr(0, 2)
+    const supportedLanguages = ["pl", "en","he"]
+    // const locale = getUserLocale().substr(0, 2)
 
-    if (supportedLanguages.indexOf(locale) !== -1) {
-        return locale
-    } 
-    // fall back to pl
-    return "pl"
+    // if (supportedLanguages.indexOf(locale) !== -1) {
+    //     return locale
+    // } 
+    // // fall back to pl
+    return "he"
 }
